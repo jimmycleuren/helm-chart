@@ -33,7 +33,7 @@ jobs:
         run: pwd
 
       - name: Ls
-          run: ls -alh
+        run: ls -alh
 
       - name: Lint
         run: helm lint ./helm-chart-sources/loxone-weather
