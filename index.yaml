@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  loxone-weather:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-12-13T13:58:26.010535893+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 47b1b5f7ed66c040998f940b8c3b2229f255fd98c3edbc1e6cd810d9461894ef
+    name: loxone-weather
+    type: application
+    urls:
+    - https://github.com/jimmycleuren/helm-chart/loxone-weather-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-12-13T13:58:25.983123092+01:00"
