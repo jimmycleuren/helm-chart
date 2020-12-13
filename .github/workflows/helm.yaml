@@ -29,6 +29,8 @@ jobs:
       - name: Install packages
         run: sudo apt-get install helm
 
+      - uses: actions/checkout@v2
+
       - name: Pwd
         run: pwd
 
