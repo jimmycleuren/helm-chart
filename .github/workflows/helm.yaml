@@ -31,11 +31,5 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: Pwd
-        run: pwd
-
-      - name: Ls
-        run: ls -alh
-
       - name: Lint
-        run: helm lint ./helm-chart-sources/loxone-weather
+        run: helm lint ./helm-chart-sources/*
