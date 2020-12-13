@@ -30,4 +30,4 @@ jobs:
         run: sudo apt-get install helm
 
       - name: Lint
-        run: helm lint helm-chart-sources/*
+        run: helm lint ./helm-chart-sources/*
