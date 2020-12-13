@@ -1,0 +1,33 @@
+name: Helm workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  helm:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: true
+
+    steps:
+      - name: Add apt keys
+        run: curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
+
+      - name: Install packages
+        run: sudo apt-get install apt-transport-https
+
+      - name: Add helm repository
+        run: echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+
+      - name: Apt update
+        run: sudo apt-get update
+
+      - name: Install packages
+        run: sudo apt-get install helm
+
+      - name: Lint
+        run: helm lint helm-chart-sources/*
