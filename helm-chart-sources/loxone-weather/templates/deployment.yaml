@@ -19,8 +19,8 @@ spec:
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
-          - name: WEATHERBIT_KEY
-            value: {{ .Values.weatherbitKey }}
+          - name: OPENWEATHERMAP_KEY
+            value: {{ .Values.openWeatherMapKey }}
         ports:
         - containerPort: {{ .Values.phpfpmService.phpfpmPort }}
         resources:
