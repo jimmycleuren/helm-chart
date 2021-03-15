@@ -69,7 +69,7 @@ spec:
             path: /health
             port: http
           initialDelaySeconds: 5
-          timeoutSeconds: 1
+          timeoutSeconds: 2 
         volumeMounts:
         - name: nginx-config
           mountPath: /opt/bitnami/nginx/conf/server_blocks
