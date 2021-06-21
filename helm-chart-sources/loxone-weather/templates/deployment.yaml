@@ -30,8 +30,6 @@ spec:
             port: {{ .Values.phpfpmService.phpfpmPort }}
           initialDelaySeconds: 10
           timeoutSeconds: 5
-      nodeSelector:
-        kubernetes.io/arch: amd64
 ---
 apiVersion: apps/v1 
 kind: Deployment
@@ -73,8 +71,6 @@ spec:
         volumeMounts:
         - name: nginx-config
           mountPath: /opt/bitnami/nginx/conf/server_blocks
-      nodeSelector:
-        kubernetes.io/arch: amd64
       volumes:
       - name: nginx-config
         configMap:
