@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
       - name: {{ template "fullname" . }}-nginx
-        image: "bitnami/nginx:latest"
+        image: "nginx:latest"
         imagePullPolicy: {{ default "" .Values.image.pullPolicy | quote }}
         ports:
         - name: http
@@ -70,7 +70,7 @@ spec:
           timeoutSeconds: 2 
         volumeMounts:
         - name: nginx-config
-          mountPath: /opt/bitnami/nginx/conf/server_blocks
+          mountPath: /etc/nginx
       volumes:
       - name: nginx-config
         configMap:

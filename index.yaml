@@ -3,7 +3,17 @@ entries:
   loxone-weather:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-21T21:38:27.268601598+02:00"
+    created: "2021-06-23T21:18:07.677012517+02:00"
+    description: A Helm chart for running a loxone weather simulator
+    digest: 3caf8321a9c3ee58ed266cbef6ecc6af59409538e1eea97e5596e2282e584b68
+    name: loxone-weather
+    type: application
+    urls:
+    - https://jimmycleuren.github.io/helm-chart/loxone-weather-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-06-23T21:18:07.675453508+02:00"
     description: A Helm chart for running a loxone weather simulator
     digest: eb8fb87aaf5972298da93b39c66bb0d0fb34ef8096e0c2e3c4ef3e542d1a0e7f
     name: loxone-weather
@@ -13,7 +23,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-21T21:38:27.26732847+02:00"
+    created: "2021-06-23T21:18:07.64176348+02:00"
     description: A Helm chart for running a loxone weather simulator
     digest: 005829f493750e092fa3d9ea394c46d33bbae3900e298df023b52ab5eded978b
     name: loxone-weather
@@ -23,7 +33,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-21T21:38:27.241364343+02:00"
+    created: "2021-06-23T21:18:07.638859121+02:00"
     description: A Helm chart for running a loxone weather simulator
     digest: 0449fc616d74a323eb117bc805adcbbcbe06aca635bcad8c31a3d16c594a9a23
     name: loxone-weather
@@ -33,7 +43,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-21T21:38:27.225018131+02:00"
+    created: "2021-06-23T21:18:07.637318222+02:00"
     description: A Helm chart for running a loxone weather simulator
     digest: db09ff867207e3d1bca81ff09456fbbac6f75e5327faba2784014b1db642e921
     name: loxone-weather
@@ -43,7 +53,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-21T21:38:27.212475115+02:00"
+    created: "2021-06-23T21:18:07.633576382+02:00"
     description: A Helm chart for running a loxone weather simulator
     digest: 15aab540d7a020b54ae4c50c5e6fe6c85d011f679ef6914fc1d96ca3ffe67aa6
     name: loxone-weather
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://jimmycleuren.github.io/helm-chart/loxone-weather-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-21T21:38:27.200611758+02:00"
+generated: "2021-06-23T21:18:07.632353398+02:00"
