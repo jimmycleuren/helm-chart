@@ -1,0 +1,6 @@
+dependencies:
+- name: mariadb
+  repository: https://nicholaswilde.github.io/helm-charts/
+  version: 0.1.1
+digest: sha256:e5329e3f0a31088593724ce5fc950dfa54c7eed8ca6319dbd5b31baca229baa2
+generated: "2021-04-03T22:51:58.270076522+02:00"
