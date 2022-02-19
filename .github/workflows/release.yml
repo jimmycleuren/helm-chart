@@ -23,6 +23,10 @@ jobs:
         uses: azure/setup-helm@v1
         with:
           version: v3.4.0
+          
+      - name: Add dependency
+        run: |
+          helm repo add nicholaswilde https://nicholaswilde.github.io/helm-charts/
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.2.1
