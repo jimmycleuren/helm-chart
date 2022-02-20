@@ -1,6 +1,9 @@
 dependencies:
+- name: mariadb
+  repository: https://nicholaswilde.github.io/helm-charts/
+  version: 0.1.1
 - name: redis
   repository: https://groundhog2k.github.io/helm-charts/
   version: 0.3.1
-digest: sha256:e8e3e0af50edee75e77e2147d9a5e29ddd98aae727b3c041ae5f938d2d9b1276
-generated: "2021-04-08T22:24:07.908944997+02:00"
+digest: sha256:8273c4f0d4d30601143043cb98d1fea5727f80334cd4f43b4ea8df276cb708b1
+generated: "2022-02-20T14:20:27.138151829+01:00"
