@@ -75,3 +75,24 @@ spec:
       - name: nginx-config
         configMap:
           name: {{ template "fullname" . }}
+---
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}-redis
+  labels:
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+spec:
+  selector:
+    matchLabels:
+      app: {{ template "fullname" . }}-redis
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "fullname" . }}-redis
+    spec:
+      containers:
+      - name: {{ template "fullname" . }}-redis
+        image: "redis:latest"
+        imagePullPolicy: {{ default "" .Values.image.pullPolicy | quote }}
