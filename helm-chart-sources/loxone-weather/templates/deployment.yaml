@@ -19,8 +19,12 @@ spec:
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
+          - name: ENV
+            value: prod
           - name: OPENWEATHERMAP_KEY
             value: {{ .Values.openWeatherMapKey }}
+          - name: REDIS_URL
+            value: redis://{{ template "fullname" . }}-redis
         ports:
         - containerPort: {{ .Values.phpfpmService.phpfpmPort }}
         resources:
