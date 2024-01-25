@@ -19,7 +19,7 @@ spec:
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
-          - name: ENV
+          - name: APP_ENV
             value: prod
           - name: OPENWEATHERMAP_KEY
             value: {{ .Values.openWeatherMapKey }}
