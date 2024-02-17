@@ -24,7 +24,7 @@ spec:
           - name: OPENWEATHERMAP_KEY
             value: {{ .Values.openWeatherMapKey }}
           - name: REDIS_URL
-            value: redis://{{ template "fullname" . }}-redis
+            value: redis://{{ template "fullname" . }}-redis.loxone-weather.svc.cluster.local
         ports:
         - containerPort: {{ .Values.phpfpmService.phpfpmPort }}
         resources:
