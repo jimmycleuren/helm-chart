@@ -21,6 +21,10 @@ phpfpmService:
   name: phpfpm
   type: NodePort
   phpfpmPort: 9000
+redisService:
+  name: redis
+  type: ClusterIP
+  redisPort: 6379
 
 ingress:
   enabled: false 
