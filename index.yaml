@@ -22,6 +22,16 @@ entries:
     version: 0.1.0
   loxone-weather:
   - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2024-04-06T20:24:32.496503052Z"
+    description: A Helm chart for running a loxone weather simulator
+    digest: a321097f4a15694d3bccdf9fd2d5cbc78ad6e97edbcd916407519cc013f60f23
+    name: loxone-weather
+    type: application
+    urls:
+    - https://github.com/jimmycleuren/helm-chart/releases/download/loxone-weather-0.2.3/loxone-weather-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2024-02-17T13:00:48.600467124Z"
     description: A Helm chart for running a loxone weather simulator
@@ -170,4 +180,4 @@ entries:
     urls:
     - https://github.com/jimmycleuren/helm-chart/releases/download/spotweb-0.1.0/spotweb-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-17T13:00:48.600538927Z"
+generated: "2024-04-06T20:24:32.49659806Z"
